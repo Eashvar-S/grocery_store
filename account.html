@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> all products = E-COMMERCE WEBSITE</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./abstract-blur-supermarket-retail-store (5).jpg" width="40px" height="40px">
+                </div>   
+                <nav>
+                    <ul >
+                        <li><a href="">home</a></li>
+                        <li><a href="">products</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">contact</a></li>
+                        <li><a href="">account</a></li>
+                        
+                    </ul>
+                </nav>
+                <img src="shopping-cart-logo-icon-shopping-cart-1c4ece4192d9f2bff2f57c678a709e5f.png" width="40px" height="40px">
+                <img src="pngegg.png" class="menu-icon" >
+            </div>
+            
+            
+        </div>
+        </div>
+       <!--account page-->
+       <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="abstract-blur-supermarket-retail-store (5).jpg" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">login</span>
+                            <span onclick="register()">register</span>
+                            <hr id="indicator">
+                        </div>
+                        <form id="loginform" >
+                            <input type="text" placeholder="username">
+                            <input type="password" placeholder="***********">
+                            <button type="submit" class="btn">login</button>
+                            <a href="">forget password</a>
+                        </form>
+                        <form id="regform">
+                            <input type="text" placeholder="username">
+                            <input type="email" placeholder="email">
+                            <input type="password" placeholder="***********">
+                            <button type="submit" class="btn">register</button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+
+        <!--js for toggle form-->
+<script>
+var loginform = document.getElementById("loginform");
+var regform = document.getElementById("regform");
+var indicator = document.getElementById("indicator");
+
+    function register(){
+        regform.style.transform = "translatex(0px)";
+        loginform.style.transform = "translatex(0px)";
+        indicator.style.transform = "translatex(100px)";
+    }
+    
+    function login(){
+        regform.style.transform = "translatex(300px)";
+        loginform.style.transform = "translatex(300px)";
+        indicator.style.transform = "translatex(0px)";
+    }
+
+
+
+</script>
+    </body>
+    <footer>
+        <div class="footer-container">
+          <!--logo-container------>
+          <div class="footer-logo">
+            <a href="#"><span>e</span>Grocery</a>
+            <!--social----->
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <!--links------------------------->
+          <div class="footer-links">
+            <strong>Product</strong>
+            <ul>
+              <li><a href="#"></a></li>
+              <li><a href="#">Packages</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">New</a></li>
+            </ul>
+          </div>
+          <!--links------------------------->
+          <div class="footer-links">
+            <strong>Category</strong>
+            <ul>
+              <li><a href="#">Snacks</a></li>
+              <li><a href="#">Cleaning</a></li>
+              <li><a href="#">Beauty</a></li>
+              <li><a href="#">Dairy</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#">Herbs&Spices</a></li>
+            </ul>
+          </div>
+          <!--links-------------------------->
+          <div class="footer-links">
+            <strong>Contact</strong>
+            <ul>
+              <li><a href="#">Phone : 8940930100</a></li>
+              <li><a href="#">Email : mariasupermarket2000@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</html>
